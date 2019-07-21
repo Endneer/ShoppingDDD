@@ -1,4 +1,5 @@
 ﻿using Core.Interfaces;
+using Core.Models;
 using Core.Models.OrderAggregate;
 using System;
 using System.Collections.Generic;
@@ -15,7 +16,7 @@ namespace Data.Repositories
         }
         public void AddOrder(Order order)
         {
-            context.Customers.Find(order.CustomerId).OrdersIds.Add(order.Id);
+            context.Orders.Add(order);
             context.SaveChanges();
         }
     }

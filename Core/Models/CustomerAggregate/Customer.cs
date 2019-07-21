@@ -1,4 +1,5 @@
-﻿using Core.Models.ValueObjects;
+﻿using Core.Models.OrderAggregate;
+using Core.Models.ValueObjects;
 using SharedKernel;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ namespace Core.Models.CustomerAggregate
         public string Name { get; private set; }
         public Address Address { get; private set; }
         public PhoneNubmer PhoneNubmer { get; private set; }
-        public List<Guid> OrdersIds { get; private set; }
+        public List<Order> Orders { get; private set; }
         private Customer() : base(Guid.NewGuid())
         {
 

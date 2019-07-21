@@ -1,11 +1,11 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
 
 namespace SharedKernel
 {
-
     public abstract class ValueObject<T> : IEquatable<T>
   where T : ValueObject<T>
     {

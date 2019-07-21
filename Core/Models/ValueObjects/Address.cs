@@ -1,10 +1,12 @@
-﻿using SharedKernel;
+﻿using Microsoft.EntityFrameworkCore;
+using SharedKernel;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Core.Models.ValueObjects
 {
+    [Owned]
     public class Address : ValueObject<Address>
     {
         public string Street { get; private set; }
