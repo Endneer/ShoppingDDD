@@ -10,6 +10,7 @@ namespace Core.Models.ProductAggregate
         public string Name { get; private set; }
         public int Quantity { get; private set; }
         public double Price { get; private set; }
+
         private Product() : base(Guid.NewGuid())
         {
 
@@ -28,6 +29,19 @@ namespace Core.Models.ProductAggregate
                 this.Quantity += increaseQuantity;
             else
                 throw new ArgumentOutOfRangeException(nameof(increaseQuantity));
+        }
+
+        public int DeductQuantity(int quantity)
+        {
+            if(Quantity <= quantity)
+            {
+                Quantity -= quantity;
+                return 0;
+            }
+            else
+            {
+                return -1;
+            }
         }
     }
 }

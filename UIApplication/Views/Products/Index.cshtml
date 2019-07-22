@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Products</h1>
+
+
+<kendo-grid name="grid" height="550">
+    <datasource type="DataSourceTagHelperType.Custom" page-size="20">
+
+        <transport>
+            <read url="https://localhost:44318/api/Products" />
+        </transport>
+        <schema>
+            <model>
+                <fields>
+                    <field name="name" type="string"></field>
+                    <field name="id" type="string"></field>
+                    <field name="quantity" type="number"></field>
+                </fields>
+            </model>
+        </schema>
+    </datasource>
+
+    <groupable enabled="true" />
+    <sortable enabled="true" />
+    <filterable enabled="true" />
+    <pageable button-count="5" refresh="true" page-sizes="new int[] { 5, 10, 20 }">
+    </pageable>
+
+    <columns>
+        <column field="id" title="ID" width="120"></column>
+        <column field="quantity" title="Quantity" width="300" />
+        <column field="name" title="Name" width="250" />
+        <column>
+         <commands>
+             <column-command text="Order One Item" click="orderOne">
+
+          </column-command>
+        </commands>
+       </column>
+    </columns>
+
+</kendo-grid>
+
+
+<script>
+    function orderOne(e) {
+        e.preventDefault();
+
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+        dataItem.quantity = 1;
+
+        $.ajax("https://localhost:44318/api/Orders", {
+            type: 'post',
+            contentType: "application/json",
+            crossDomain: true,
+            data: JSON.stringify(dataItem)
+        });
+    }
+</script>

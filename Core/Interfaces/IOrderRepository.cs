@@ -8,5 +8,7 @@ namespace Core.Interfaces
     public interface IOrderRepository
     {
         void AddOrder(Order order);
+
+
     }
 }

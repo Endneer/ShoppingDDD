@@ -1,15 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29102.190
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{B75D01C1-86BA-4A4B-8906-2E0792B75DCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{B75D01C1-86BA-4A4B-8906-2E0792B75DCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedKernel", "SharedKernel\SharedKernel.csproj", "{2991D013-55A3-4386-94A6-C79AE22243CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedKernel", "SharedKernel\SharedKernel.csproj", "{2991D013-55A3-4386-94A6-C79AE22243CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{A6BF7705-FA69-4BBF-B0CE-5F89F665C56B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{A6BF7705-FA69-4BBF-B0CE-5F89F665C56B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{589398EC-64A9-44B2-9EBB-854BA4284E3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{589398EC-64A9-44B2-9EBB-854BA4284E3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIApplication", "UIApplication\UIApplication.csproj", "{B68CAA1E-FA77-4CEF-95B8-3C556899946B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{589398EC-64A9-44B2-9EBB-854BA4284E3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{589398EC-64A9-44B2-9EBB-854BA4284E3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{589398EC-64A9-44B2-9EBB-854BA4284E3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B68CAA1E-FA77-4CEF-95B8-3C556899946B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B68CAA1E-FA77-4CEF-95B8-3C556899946B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B68CAA1E-FA77-4CEF-95B8-3C556899946B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B68CAA1E-FA77-4CEF-95B8-3C556899946B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

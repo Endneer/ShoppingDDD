@@ -15,7 +15,7 @@ namespace Core.Models.ValueObjects
             if (Regex.IsMatch(number.ToString(), "^(\\d){11}$"))
                 Number = number;
             else
-                throw new ArgumentException("Phone number must be nine digits");
+                throw new ArgumentException("Phone number must be eleven digits");
         }
     }
 }
