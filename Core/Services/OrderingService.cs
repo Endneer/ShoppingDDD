@@ -33,7 +33,7 @@ namespace Core.Services
             foreach (var orderItem in order.OrderItems)
             {
 
-                var products = productsRepository.GetProducts().Where(id => id.Id == orderItem.Id);
+                var products = productsRepository.GetProducts().Where(p => p.Id == orderItem.Id);
 
                 foreach (var product in products)
                 {

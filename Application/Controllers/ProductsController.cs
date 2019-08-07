@@ -5,12 +5,14 @@ using System.Threading.Tasks;
 using Core.Interfaces;
 using Core.Models.ProductAggregate;
 using Data.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Application.Controllers
 {
     [ApiController]
     [Route("/api/[controller]")]
+    [Authorize]
     public class ProductsController : ControllerBase
     {
         private readonly IProductsRepository productsRepository;

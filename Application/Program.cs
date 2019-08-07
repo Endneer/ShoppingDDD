@@ -19,6 +19,7 @@ namespace Application
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+            .ConfigureAppConfiguration((hostingContext, config) => { config.AddEnvironmentVariables(prefix: "EVPOC_"); })
                 .UseStartup<Startup>();
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.757
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{B75D01C1-86BA-4A4B-8906-2E0792B75DCC}"
 EndProject
@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{589398EC-64A9-44B2-9EBB-854BA4284E3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIApplication", "UIApplication\UIApplication.csproj", "{B68CAA1E-FA77-4CEF-95B8-3C556899946B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UIApplication", "UIApplication\UIApplication.csproj", "{B68CAA1E-FA77-4CEF-95B8-3C556899946B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTest", "DataTest\DataTest.csproj", "{4213858E-76CB-4459-942A-905612EB47BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{B68CAA1E-FA77-4CEF-95B8-3C556899946B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B68CAA1E-FA77-4CEF-95B8-3C556899946B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B68CAA1E-FA77-4CEF-95B8-3C556899946B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4213858E-76CB-4459-942A-905612EB47BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4213858E-76CB-4459-942A-905612EB47BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4213858E-76CB-4459-942A-905612EB47BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4213858E-76CB-4459-942A-905612EB47BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

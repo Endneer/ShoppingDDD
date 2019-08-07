@@ -10,7 +10,7 @@
     <datasource type="DataSourceTagHelperType.Custom" page-size="20">
 
         <transport>
-            <read url="https://localhost:44318/api/Products" />
+            <read url="/Products/GetProducts" />
         </transport>
         <schema>
             <model>
@@ -52,7 +52,7 @@
         var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
         dataItem.quantity = 1;
 
-        $.ajax("https://localhost:44318/api/Orders", {
+        $.ajax("/Products/OrderOneItem", {
             type: 'post',
             contentType: "application/json",
             crossDomain: true,
